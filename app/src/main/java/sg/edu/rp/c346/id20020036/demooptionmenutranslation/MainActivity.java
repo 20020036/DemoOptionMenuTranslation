@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView tvTranslation;
+    TextView tvTranslation2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvTranslation = findViewById(R.id.tvTranslation);
+        tvTranslation2 = findViewById(R.id.tvTranslation2);
 
     }
 
@@ -33,11 +35,13 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.EnglishSelection)
         {
             tvTranslation.setText("Hello!");
+            tvTranslation2.setText("Bye!");
             return true;
         }
         else if(id == R.id.italianSelection)
         {
             tvTranslation.setText("Ciao!");
+            tvTranslation2.setText("Addio!");
         }
         else
         {
